@@ -14,7 +14,7 @@ class ProductController extends BaseController
     public function delete($id)
     {
        $this ->product->delete($id);
-       return redirect()->to('product');
+       return redirect()->to('products');
     }
     public function edit($id)
     {
@@ -47,7 +47,7 @@ class ProductController extends BaseController
     {
         echo $product;
     }
-    public function Michael()
+    public function Edward()
     {
         $data['product'] = $this->product->findAll();
         return view('products', $data);
